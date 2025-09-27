@@ -11,11 +11,11 @@ namespace Tyuiu.DatskiyDE.Sprint2.Task5.V11.Test
             DataService ds = new DataService();
 
 
-            string res1 = ds.FindDateOfNextDay(1939, 8, 31);
-            Assert.AreEqual("1.9.1939", res1);
+            string res1 = ds.FindDateOfNextDay(1939, 08, 31);
+            Assert.AreEqual("01.09.1939", res1);
                      
             string res2 = ds.FindDateOfNextDay(2021, 12, 31);
-            Assert.AreEqual("1.1.2022", res2);
+            Assert.AreEqual("01.01.2022", res2);
         }
     }
 }

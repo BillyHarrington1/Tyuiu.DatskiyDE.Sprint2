@@ -66,7 +66,12 @@ namespace Tyuiu.DatskiyDE.Sprint2.Task5.V11.Lib
                 }
             }
 
-            return $"{nextDay}.{nextMonth}.{nextYear}";
+            // Формат c 0
+            string formattedDay = nextDay.ToString("00");
+            string formattedMonth = nextMonth.ToString("00");
+
+            return $"{formattedDay}.{formattedMonth}.{nextYear}";
+       
         }
     }
 }
